@@ -9,7 +9,7 @@ START
     output "Enter the price of this candy: "
     input price
     
-    while money > 0 and money >= price
+    while money > 0 and price > 0 and money - price >= 0
       candy+1
       money-price
     end while
